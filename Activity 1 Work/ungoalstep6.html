@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>UN Goals Step 6</title>
+</head>
+<style type="text/css">
+	
+	.home {
+
+		position: fixed;
+		top: 10px;
+		right: 10px;
+		z-index: 2000;
+	}
+
+	.btn {
+
+		background-color: lightgrey;
+		border-radius: 20px;
+		font-size: 20px;
+	}
+
+	.flip-box {
+
+
+		background-color: transparent;
+		width: 300px;
+		height:300px;
+		perspective: 1000px; /* Gives 3D Effect */
+
+	}
+
+	.flip-box-inner {
+		position: relative;
+		width: 100%;
+		height: 100%;
+		text-align: center;
+		transition: transform 0.8s;
+		transform-style: preserve-3d;
+	}
+
+	.flip-box:hover .flip-box-inner {
+		transform: rotateY(180deg);
+	}
+
+	.flip-box-front, .flip-box-back {
+		position: absolute;
+		width: 100%;
+		height: 100%;
+		backface-visibility: hidden;
+	}
+
+	.flip-box-front {
+		background-color: #bbb;
+		color: black;
+	}
+
+	.flip-box-back {
+		background-color: #bbb;
+		color: white;
+		transform: rotateY(180deg);
+	}
+
+	.flex-container {
+		display: flex;
+		background-color: DodgerBlue;
+		flex-wrap: wrap;
+		align-content: center;
+		justify-content: center;
+		margin-top: 200px;
+
+	}
+
+	.flex-container > div {
+		background-color: #f1f1f1;
+		margin: 5px;
+		padding: 10px;
+		font-size: 30px;
+
+	}
+	.center {
+		display: block;
+		margin-left: auto;
+		margin-right: auto;
+		width: 100%;
+	}
+
+	.topbar {
+		overflow: hidden;
+	  	background-color: white;
+	  	position: fixed;
+	  	top: 0;
+	  	width: 100%;
+		z-index: 1000;
+	}
+
+</style>
+<body>
+	<div class = "topbar">
+		<picture>
+	  		<source media="(min-width: 850px)" srcset="images/logo1.png">
+	 		<img src="images/logo2.png" alt="Flowers" style="width:auto;" class = center>
+		</picture>
+	</div>
+	<div class = "home">
+		<form action = "../index.html">
+			<input class = "btn" type = "submit" value = "HOME"/>
+		</form>
+	</div>
+	<div class = "flex-container">
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal1.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #EB1C23">
+					<h3>No Poverty</h3>
+					<p>How will reduced poverty aid our society?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal2.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #cc9933">
+					<h3>Zero Hunger</h3>
+					<p>How will we create sustainable solutions to hunger?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal3.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #339933">
+					<h3>Good Health and Well Being</h3>
+					<p>Should health and well being be considered the top priority?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal4.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #cc3333">
+					<h3>Quality Education</h3>
+					<p>How will quality education be accessible to all?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal5.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #ff3333">
+					<h3>Gender Equality</h3>
+					<p>How are ideas surrounding gender equality changing?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal6.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div> 
+				<div class = "flip-box-back" style = "background-color: #0099cc">
+					<h3>Clean Water and Sanitation</h3>
+					<p>How do we maintain a sustainable water clean water supply?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal7.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #ffcc00">
+					<h3>Affordable and Clean Energy</h3>
+					<p>What energy source should we prioritize?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal8.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #990033">
+					<h3>Decent Work and Economic Growth</h3>
+					<p>How do we measure decent work?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal9.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #ff6633">
+					<h3>Industry, Innovation and Infrastructure</h3>
+					<p>How do we balance resources between these three?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal10.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #cc0099">
+					<h3>Reduced Inequalities</h3>
+					<p>What inequalities should be prioritized?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal11.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #ff9933">
+					<h3>Sustainable Cities and Communities</h3>
+					<p>What aspects of cities and communities should be prioritised to be sustainable?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal12.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #cc9933">
+					<h3>Responsible Consumption and Production</h3>
+					<p>Why is it necessary that we limit consumption of certain materials?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal13.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #336633">
+					<h3>Climate Action</h3>
+					<p>Why is it necessary that we reduce the rate of climate change?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal14.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #0066cc">
+					<h3>Life Below Water</h3>
+					<p>In what ways do we depend on underwater life to keep our population sustainable?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal15.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #339933">
+					<h3>Life on Land</h3>
+					<p>How do we preserve key ecosystems as our population grows?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal16.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #006699">
+					<h3>Peace, Justice and Strong Insitutions</h3>
+					<p>How do these help to keep a civil society?</p>
+				</div>
+			</div>
+		</div>
+		<div class = "flip-box">
+			<div class = "flip-box-inner">
+				<div class = "flip-box-front">
+					<img src="images/goal17.png" alt = "Avatar" style = "width:300px; height:300px;"/>
+				</div>
+				<div class = "flip-box-back" style = "background-color: #003366">
+					<h3>Partnerships for the Goals</h3>
+					<p>Who has the potential to be a key benefactor towards these goals?</p>
+				</div>
+			</div>
+		</div>
+	</div>
+</body>
+</html>

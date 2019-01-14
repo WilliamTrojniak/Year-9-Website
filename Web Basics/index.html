@@ -1,39 +1,28 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<style>
-		
-		h1 {
-			color: cyan;
-
-		}
-
-
-	</style>
-
-	<title>My HelloWorld Webpage</title>
-
+	<title></title>
+	<script type="text/javascript" src="https://sdk.clarifai.com/js/clarifai-latest.js"></script>
 	
-
 </head>
 <body>
-	<div>
-		<h1>
-			Header 1
-		</h1>
-	</div>
-	<div>
-		<h2>
-			Header 2
-		</h2>
-		<p>
-			Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-			tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-			quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-			consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-			cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-			proident, sunt in culpa qui officia deserunt mollit anim id est laborum.
-		</p>
-	</div>
+	<img src="https://samples.clarifai.com/demographics.jpg">
+	<script>
+		
+
+// initialize with your api key. This will also work in your browser via http://browserify.org/
+
+const app = new Clarifai.App({
+ apiKey: '24a2602f223a4cfc8ac822f7286c0871'
+});
+		app.models.predict("c0c0ac362b03416da06ab3fa36fb58e3", "https://samples.clarifai.com/demographics.jpg").then(
+    function(response) { console.log(response);
+      // do something with response
+    },
+    function(err) {
+      // there was an error
+    }
+  );
+</script>	
 </body>
 </html>

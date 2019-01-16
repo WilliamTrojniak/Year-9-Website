@@ -1,0 +1,17 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+	<title>Stage 2 JSON Activity</title>
+</head>
+<body>
+	<script type="text/javascript">
+		var myData = "";
+   		var staticUrl = 'https://raw.githubusercontent.com/WilliamTrojniak/williamtrojniak.github.io/master/Activity%202%20Work/data/data.json'; 
+
+		$.getJSON(staticUrl, function(data) {
+        console.log(data)
+    	});
+	</script>
+</body>
+</html>

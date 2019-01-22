@@ -26,6 +26,7 @@
 		li 
 		{
 		  float: left;
+		  border-right: solid #fff 1px;
 		}
 
 		li a, .dropbtn {
@@ -37,7 +38,7 @@
 		}
 
 		li a:hover:not(.active), .dropdown:hover .dropbtn {
-			background-color: red;
+			background-color: #8bafc7;
 		}
 
 		li.dropdown {
@@ -71,17 +72,20 @@
 			display: block;
 		}
 
+		.active {
+			background-color: #8bafc7;
+		}
+
 	</style>
 </head>
 <body>
 	<ul>
 	  <li><a class = "active" href="https://williamtrojniak.github.io/">Home</a></li>
 	  <li class="dropdown">
-	    <a href="javascript:void(0)" class="dropbtn">Dropdown</a>
+	    <a href="javascript:void(0)" class="dropbtn">Activities</a>
 	    <div class="dropdown-content">
-	      <a href="#">Link 1</a>
-	      <a href="#">Link 2</a>
-	      <a href="#">Link 3</a>
+	      <a href="Activity 1 Work/ungoalstep8.html">Activity 1 Finished Product</a>
+	      <a href="Activity 2 Work/stage3JSON.html">Activity 2 (WIP)</a>
 	    </div>
 	  </li>
 	  <li><a href="#news">News</a></li>

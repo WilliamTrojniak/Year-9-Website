@@ -98,7 +98,7 @@
 <body>
 	<div class = "topbar">
 		<picture>
-	  		<source media="(min-width: 850px)" srcset="images/logo1.png">
+	  		<source media="(min-width: 920px)" srcset="images/logo1.png">
 	 		<img src="images/logo2.png" alt="Flowers" style="width:auto;" class = center>
 		</picture>
 	</div>
@@ -300,18 +300,18 @@
 		w = window.innerWidth;
 
 			if(w < 920){
-				console.log("w < 920")
+				document.getElementsByClassName("flex-container")[0].style.marginTop = "270px";
 			}else{
-				console.log("w > 920")
+				document.getElementsByClassName("flex-container")[0].style.marginTop = "200px";
 			}
 			
 		window.onresize = function(event){
 			w = window.innerWidth;
 
 			if(w < 920){
-				console.log("w < 920")
+				document.getElementsByClassName("flex-container")[0].style.marginTop = "270px";
 			}else{
-				console.log("w > 920")
+				document.getElementsByClassName("flex-container")[0].style.marginTop = "200px";
 			}
 		}
 	</script>

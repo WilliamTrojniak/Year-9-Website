@@ -74,15 +74,16 @@
         var entry = document.getElementById("maxdisplay");
         var displayContent = document.getElementById("content");
         console.log(entry)
-        console.log(displayContent)
+        
 
         function generateDisplay(){
             console.log("Generating Display")
-            $.getJSON(staticUrl, function(data) {
-                //Clear content div
-                while (displayContent.getElementsByTagName("div").length > 0) {
+            while (displayContent.getElementsByTagName("div").length > 0) {
                         displayContent.removeChild(displayContent.childNodes[0])
                 }
+            $.getJSON(staticUrl, function(data) {
+                //Clear content div
+                
                 iw = window.innerWidth - 100;
 
 
@@ -104,7 +105,7 @@
                     val = val.replace(/ /g,"");
                     val = parseInt(val);
                     
-                    if (isNaN(val) === false && val <= entry.value) {
+                    if (isNaN(val) === false && val < entry.value) {
                         largest = Math.max(largest,val);
                     }
                 }
@@ -120,7 +121,7 @@
                     val = val.replace(/ /g,"");  
                     val = parseInt(val);
                     vals = val/largest*iw;
-                    if (isNaN(vals) === false) {
+                    if (isNaN(val) === false && val < entry.value) {
                         var div = document.createElement("div");
                         document.getElementById("content").appendChild(div);
                         div.setAttribute("id","div"+i);  

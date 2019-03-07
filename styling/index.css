@@ -1,0 +1,91 @@
+body {
+	margin: 0;
+	padding: 0;
+	background-color: #D4D7DB;
+}
+
+/*Menu Bar Styling*/
+
+.menubar {
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	overflow: hidden;
+	background-color: #142539;
+	position: sticky;
+	top: 0;
+	width: 100%;
+}
+
+.menubarListItem {
+	float: left;
+	margin-left: 10px;
+	border: 2px solid #ffffff;
+	margin-top: 10px;
+	margin-bottom: 10px;
+}
+
+.menubarLink {
+	display: block;
+	color: white;
+	text-align: center;
+	padding: 14px 16px;
+	text-decoration: none;
+	font-size: 20px;	
+}
+
+.menubarLink:hover {
+	background-color: #9FBDE1;
+}
+
+#active {
+	background-color: #07366E;
+}
+
+
+/*Table Styling*/
+    table, td, th {
+      border: 1px solid black;
+      padding: 10px;
+      background-color: white;
+      margin: 40px;
+    } 
+    .center {
+    
+      margin-left: auto;
+      margin-right: auto;
+      margin-top: 5px;
+      margin-bottom: 5px;
+      width: 100%;
+    }
+    input {
+      text-align: center;
+      background-color: lightgrey;
+      border-radius: 10px;
+    }
+
+
+/*Header Styling*/
+	#header {
+		font-size: 50px;
+		text-align: center;
+		background-color: #54606D;
+		color: #ffffff;
+		padding: 0px;
+		margin: 0px;
+		border-bottom: 2px solid #ffffff;
+	}
+
+	#headertitle {
+		margin: 5px;
+	}
+
+	h2 {
+		color: #142539;
+		margin-left: 40px;
+		margin-top: 60px;
+	}
+
+
+
+

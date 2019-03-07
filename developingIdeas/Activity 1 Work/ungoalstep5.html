@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <head>
-	<title>UN Goals Step 7</title>
+	<title>UN Goals Step 5</title>
 </head>
 <style type="text/css">
 	
@@ -67,7 +67,6 @@
 		flex-wrap: wrap;
 		align-content: center;
 		justify-content: center;
-		margin-top: 200px;
 
 	}
 
@@ -76,7 +75,6 @@
 		margin: 5px;
 		padding: 10px;
 		font-size: 30px;
-
 	}
 	.center {
 		display: block;
@@ -85,26 +83,15 @@
 		width: 100%;
 	}
 
-	.topbar {
-		overflow: hidden;
-	  	background-color: white;
-	  	position: fixed;
-	  	top: 0;
-	  	width: 100%;
-		z-index: 1000;
-	}
-
 </style>
 <body>
-	<div class = "topbar">
-		<picture>
-	  		<source media="(min-width: 920px)" srcset="images/logo1.png">
-	 		<img src="images/logo2.png" alt="Flowers" style="width:auto;" class = center>
-		</picture>
-	</div>
+	<picture>
+  		<source media="(min-width: 850px)" srcset="images/logo1.png">
+ 		<img src="images/logo2.png" alt="Flowers" style="width:auto;" class = center>
+	</picture>
 	<div class = "home">
-		<form action = "../index.html">
-			<input class = "btn" type = "submit" value = "HOME"/>
+		<form action = "../workRecord.html">
+			<input class = "btn" type = "submit" value = "BACK"/>
 		</form>
 	</div>
 	<div class = "flex-container">
@@ -236,7 +223,7 @@
 				</div>
 				<div class = "flip-box-back" style = "background-color: #cc9933">
 					<h3>Responsible Consumption and Production</h3>
-					<p>Why is it necessary that we limit consumption of certain materials?</p>
+					<p>Why is it necessary that we limit consumption and production of certain materials?</p>
 				</div>
 			</div>
 		</div>
@@ -296,24 +283,5 @@
 			</div>
 		</div>
 	</div>
-	<script>
-		w = window.innerWidth;
-
-			if(w < 920){
-				document.getElementsByClassName("flex-container")[0].style.marginTop = "270px";
-			}else{
-				document.getElementsByClassName("flex-container")[0].style.marginTop = "200px";
-			}
-			
-		window.onresize = function(event){
-			w = window.innerWidth;
-
-			if(w < 920){
-				document.getElementsByClassName("flex-container")[0].style.marginTop = "270px";
-			}else{
-				document.getElementsByClassName("flex-container")[0].style.marginTop = "200px";
-			}
-		}
-	</script>
 </body>
 </html>

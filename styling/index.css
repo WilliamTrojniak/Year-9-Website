@@ -1,53 +1,72 @@
 body {
 	margin: 0;
 	padding: 0;
-	background-color: #D4D7DB;
+	background-color: #D9D9D9;
 }
 
 /*Menu Bar Styling*/
-
 .menubar {
+	z-index: 9999;
 	list-style-type: none;
 	margin: 0;
+	margin-bottom:20px;
 	padding: 0;
 	overflow: hidden;
-	background-color: #142539;
+	background-color: #ffffff;
 	position: sticky;
 	top: 0;
 	width: 100%;
+	box-shadow: 0px 0px 15px #656;
 }
 
-.menubarListItem {
+.menubarListItem{
+
+	float: right;
+
+}
+
+.menubarListItem:nth-child(1) {
+
 	float: left;
-	margin-left: 10px;
-	border: 2px solid #ffffff;
-	margin-top: 10px;
-	margin-bottom: 10px;
+
 }
 
 .menubarLink {
 	display: block;
-	color: white;
+	color: #656D78;
 	text-align: center;
-	padding: 14px 16px;
+	padding: 20px 40px;
 	text-decoration: none;
-	font-size: 20px;	
+	font-size: 18px;
 }
 
 .menubarLink:hover {
-	background-color: #9FBDE1;
+
+	background-color: #F2F3F7;
+
 }
 
-#active {
-	background-color: #07366E;
+/*Photo Container Styling*/
+.photoContainer {
+	position: relative;
+	text-align: center;
+	color: white;
 }
+.photoContainerCenter {
+	position: absolute;
+  	top: 50%;
+  	left: 50%;
+  	transform: translate(-50%, -50%);
+}
+
+
 
 
 /*Table Styling*/
     table, td, th {
       border: 1px solid black;
       padding: 10px;
-      background-color: white;
+      background-color: #F2F3F7;
       margin: 40px;
     } 
     .center {
@@ -67,9 +86,9 @@ body {
 
 /*Header Styling*/
 	#header {
-		font-size: 50px;
+		font-size: 20px;
 		text-align: center;
-		background-color: #54606D;
+		background-color: #ffffff;
 		color: #ffffff;
 		padding: 0px;
 		margin: 0px;
@@ -77,7 +96,12 @@ body {
 	}
 
 	#headertitle {
-		margin: 5px;
+		margin: 0px;
+		color: #505050;
+		padding: 5px;
+		outline: 4px solid #505050;
+		font-size: 80px;
+		text-shadow: 0px 0px 2px;
 	}
 
 	h2 {

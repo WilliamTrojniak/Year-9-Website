@@ -96,7 +96,7 @@ body {
   content: "\2796"; /* Unicode character for "minus" sign (-) */
 }
 .panel {
-	padding: 0 18px;
+	padding: 0px 18px;
 	background-color: #fff;
 	max-height: 0;
 	overflow: hidden;
@@ -117,16 +117,28 @@ body {
 
 .panel:last-child {
 	border-radius: 0px 0px 30px 30px;
+	margin-bottom: 20px;
 }
 
 
 /*Table Styling*/
-    table, td, th {
-      border: 1px solid black;
+	table {
+		border-collapse: collapse;
+		margin: 20px;
+
+	}
+
+    table, th, td {
+      border: 1px solid #434A54;
       padding: 10px;
-      background-color: #F2F3F7;
-      margin: 40px;
-    } 
+    
+     
+    }
+
+    tr:nth-child(even) {
+    	background-color: #F2F3F7;
+
+    }
     .center {
     
       margin-left: auto;

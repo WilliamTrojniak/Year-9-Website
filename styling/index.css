@@ -59,6 +59,57 @@ body {
   	transform: translate(-50%, -50%);
 }
 
+/*Accordian Styling*/
+.accordionContainer {
+	margin: 0px 50px 0px 50px;
+
+	box-shadow: 1px 1px 5px #434A54;
+}
+
+.accordion {
+
+	background-color: #F2F3F7;
+	width: 100%;
+	color: #656D78;
+	cursor: pointer;
+	padding: 18px;
+	font-size: 19px;
+	text-align: left;
+	border: none;
+	outline: none;
+	transition: 0.4s;
+}
+
+.active, .accordion:hover {
+
+	background-color: #ccc;
+
+
+}
+
+.accordion:after {
+  content: '\02795'; /* Unicode character for "plus" sign (+) */
+  font-size: 13px;
+  color: #777;
+  float: right;
+  margin-left: 5px;
+}
+
+.active:after {
+  content: "\2796"; /* Unicode character for "minus" sign (-) */
+}
+
+
+.panel {
+
+	padding: 0 18px;
+	background-color: #fff;
+	max-height: 0;
+	overflow: hidden;
+	transition: max-height 0.2s ease-out;
+
+}
+
 
 
 

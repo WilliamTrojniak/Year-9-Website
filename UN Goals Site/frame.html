@@ -1,18 +1,63 @@
-<!DOCTYPE html>
-<html>
-<head>
-	<title>Framework</title>
-	<link rel="stylesheet" type="text/css" href="style.css">
-</head>
-<body>
-	<!-- Top Menu Bar -->
-	<ul class = "menubar">
-		<li id = "active" class = "menubarListItem"><a class = "menubarLink" href = "#default">Home</a></li>
-		<li class = "menubarListItem"><a class = "menubarLink" href = "#ungoal7">UN Goal 7</a></li>
-		<li class = "menubarListItem"><a class = "menubarLink" href = "#ungoal13">UN Goal 13</a></li>
-		<li class = "menubarListItem"><a class = "menubarLink" href = "#ungoals13and17">UN Goals 7 & 13</a></li>
-	</ul>
-	<!-- End Top Menu Bar -->
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>Framework</title>
+    <meta charset = "UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+  </head>
+  <body>
 
-</body>
+    <!-- Menu Bar Div-->
+    <div>
+    	<ul class = "menubar">
+	      <li class = "menubarListItem"><a class = "menubarLink" href = "#index.html">Home</a></li>
+	    </ul>
+    </div>
+    <!-- End Menu Bar Div -->
+
+    <!-- Body Div -->
+    <div id = "bodyDiv">
+    	<!-- Slideshow Div -->
+   		<div id = "slideShow"> 
+   			<div class = "slideshow-container">
+				<div class="mySlides fade">
+				  <div class="slidenumbertext">1 / 3</div>
+				  <img src="images/ss1.png" style="width:100%">
+				  <div class="slidetext">Caption Text</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="slidenumbertext">2 / 3</div>
+				  <img src="images/ss2.png" style="width:100%">
+				  <div class="slidetext">Caption Two</div>
+				</div>
+
+				<div class="mySlides fade">
+				  <div class="slidenumbertext">3 / 3</div>
+				  <img src="images/ss3.png" style="width:100%">
+				  <div class="slidetext">Caption Three</div>
+				</div>
+
+				<a class="slideprev" onclick="plusSlides(-1)">&#10094;</a>
+				<a class="slidenext" onclick="plusSlides(1)">&#10095;</a>
+
+			</div>
+			<br>
+
+			<div style="text-align:center">
+			  <span class="slidedot" onclick="currentSlide(1)"></span> 
+			  <span class="slidedot" onclick="currentSlide(2)"></span> 
+			  <span class="slidedot" onclick="currentSlide(3)"></span> 
+			</div>
+   		</div>
+   		<!-- End Slideshow Div -->
+   	</div>
+   	<!-- End Body Div -->
+
+
+   
+
+
+  	<script src = "scripts/slideshow.js"></script>
+  </body>
 </html>

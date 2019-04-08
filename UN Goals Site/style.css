@@ -216,7 +216,6 @@ p {
   margin-top: 10px;
   left: 0px;
   float: left;
-  height: 100px;
 }
 
 
@@ -238,15 +237,16 @@ p {
 
 /*Interactive Activity Div*/
 #activityDiv {
-  width: 100px;
+  width: 100%;
   margin-top: 10px;
+
 }
 /*End Interactive Activity Div*/
 
 
 /*External Readings Div*/
 #extReadingsDiv{
-  width: 100px;
+  width: 100%;
   margin-top: 10px;
 }
 /*End External Readings Div*/

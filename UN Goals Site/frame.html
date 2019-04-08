@@ -4,6 +4,7 @@
     <title>Framework</title>
     <meta charset = "UTF-8" />
     <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
   </head>
   <body>
 
@@ -14,6 +15,9 @@
 	    </ul>
     </div>
     <!-- End Menu Bar Div -->
+
+    <!-- Back to top button -->
+    <button onclick="backToTop()" id="backToTopBttn" title="Back to Top">Top</button>
 
     <!-- Body Div -->
     <div id = "bodyDiv">
@@ -39,17 +43,66 @@
    		</div>
    		<!-- End Slideshow Div -->
    		<!-- Introduction Div -->
-   		<div id = "introDiv">
+   		<div id = "introDiv" class = "contentDiv">
+        <div class = "firstSlideElement textblock">
+          <h1>Introduction</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          </p>
+        </div>
+        <div class = "secondSlideElement">
+          <h1>Introduction</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          </p>
+        </div>
+        <div class = "thirdSlideElement">
+          <h1>Introduction</h1>
+          <p>
+            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
+            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
+            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
+            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
+            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
+            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+          </p>
+        </div>
    		</div>
    		<!-- End Intro Div -->
-   		<!-- Interactive Graph Div -->
-   		<div id = "graphDiv">
-   		</div>
-   		<!-- End Interactive Graph Div -->
-   		<!-- Statistics Div -->
-   		<div id = "statsDiv">
-   		</div>
-   		<!-- End Statistics Div -->
+      <div class = "contentDiv">
+     		<!-- Interactive Graph Div -->
+     		<div id = "graphDiv">
+          <h1>Interactive Graph</h1>
+          <div class = "firstSlideElement">
+           
+
+          </div>
+     		</div>
+     		<!-- End Interactive Graph Div -->
+     		<!-- Statistics Div -->
+     		<div id = "statsDiv">
+          <div class = "firstSlideElement">
+            <h1>Statistics</h1>
+          </div>
+          <div class = "secondSlideElement">
+            <h1>Interactive Graph</h1>
+          </div>
+          <div class = "thirdSlideElement">
+            <h1>Statistics</h1>
+          </div>
+     		</div>
+     		<!-- End Statistics Div -->
+      </div>
    		<!-- Interactive Activity Div -->
    		<div id = "activityDiv">
    		</div>
@@ -73,5 +126,6 @@
 
 
   	<script src = "scripts/slideshow.js"></script>
+    <script src = "scripts/backToTopButton.js"></script>
   </body>
 </html>

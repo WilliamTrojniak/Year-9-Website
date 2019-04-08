@@ -4,6 +4,22 @@ body {
   background-color: #FEFEFE;
 }
 
+h1 {
+  text-align: center;
+  margin: 0px;
+  margin-top: 10px;
+}
+
+p {
+  margin: 10px;
+  font-family: 'Nunito', sans-serif;
+  font-size: 19px;
+}
+
+.textblock{
+  padding: 2px;
+}
+
 /*Menu Bar Styling*/
 .menubar {
 	z-index: 9999;
@@ -46,15 +62,55 @@ body {
 }
 /*End Menu Bar Styling*/
 
+/*Back to top button*/
+#backToTopBttn {
+  display: none;
+  position: fixed;
+  bottom: 20px;
+  right: 30px;
+  z-index: 99;
+  font-size: 18px;
+  border: none;
+  outline: none;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  padding: 15px;
+  border-radius: 4px;
+}
+
+#backToTopBttn:hover {
+  background-color: #555;
+}
+
+
+/*End Back To Top Button*/
+
+
 #bodyDiv {
 	height: 1000px;
-	background-color: #FFFFFF;
+	background-color: #FFF;
 
 	margin: 0px 100px 0px 100px;
   box-shadow: 0px -10px 10px black;
 
 
 }
+
+.firstSlideElement, .secondSlideElement, .thirdSlideElement {
+  width: 100%;
+  height: 100%;
+  transition: 10s ease;
+}
+
+.contentDiv {
+  background-color: green;
+  width: 95%;
+  margin: auto;
+  border-radius: 30px;
+  padding: 0px;
+}
+
 
 /*Slideshow Styling*/
 
@@ -76,7 +132,7 @@ body {
   display: block;
   width: 100%;
   height: 360px;
-  box-shadow: 0px 5px 20px black;
+  box-shadow: 0px 5px 20px #000;
 }
 
 .slideshow-container{
@@ -138,18 +194,15 @@ body {
   to {opacity: 1}
 }
 
-/* On smaller screens, decrease text size */
-@media only screen and (max-width: 300px) {
-  .slideprev, .slidenext,.slidetext {font-size: 11px}
-}
 /*End Slideshow Styling*/
 
 
 /*Introduction Div Styling*/
 #introDiv{
-  margin-top: 10px;
-  width: 100%;
+  margin-top: 30px;
 }
+
+
 
 
 /*End Introduction Div Styling*/
@@ -163,6 +216,7 @@ body {
   margin-top: 10px;
   left: 0px;
   float: left;
+  height: 100px;
 }
 
 

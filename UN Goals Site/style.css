@@ -6,19 +6,78 @@ body {
 
 h1 {
   text-align: center;
-  margin: 0px;
-  margin-top: 10px;
+  margin: 15px 5px 0px 5px;
+  font-family: 'Bubblegum Sans', cursive;
+  font-size: 40px;
 }
 
 p {
   margin: 10px;
-  font-family: 'Nunito', sans-serif;
+  font-family: 'Exo 2', sans-serif;
   font-size: 19px;
 }
 
 .textblock{
   padding: 2px;
 }
+
+/*Flip Box Styling*/
+.flip-box {
+  height: 175px;
+  width: 175px;
+  perspective: 1000px; /* Gives 3D Effect */
+  border-radius: 10px;
+}
+
+  .flip-box-inner {
+    position: relative;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+    transition: transform 0.8s;
+    transform-style: preserve-3d;
+  }
+
+  .flip-box:hover .flip-box-inner {
+    transform: rotateY(180deg);
+  }
+
+  .flip-box-front, .flip-box-back {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    backface-visibility: hidden;
+    color: black;
+    background-color: lightgreen;
+    border-radius: 10px;
+  }
+
+
+  .flip-box-back {
+    transform: rotateY(180deg);
+
+  }
+
+  .flip-box-back p {
+    font-size: 17px;
+  }
+
+/*End Flip Box*/
+
+/*Flex Container Styling*/
+.flex-container {
+    display: flex;
+    flex-wrap: wrap;
+    align-content: center;
+    justify-content: center;
+
+  }
+
+  .flex-container > div {
+    margin: 2px;
+    padding: 6px;
+  }
+/*End Flex Container*/
 
 /*Menu Bar Styling*/
 .menubar {
@@ -88,9 +147,8 @@ p {
 
 
 #bodyDiv {
-	height: 1000px;
 	background-color: #FFF;
-
+  /*padding: 10px;*/
 	margin: 0px 100px 0px 100px;
   box-shadow: 0px -10px 10px black;
 
@@ -107,8 +165,9 @@ p {
   background-color: green;
   width: 95%;
   margin: auto;
-  border-radius: 30px;
-  padding: 0px;
+  margin-top: 30px;
+  border-radius: 20px;
+  padding: 5px;
 }
 
 
@@ -199,7 +258,6 @@ p {
 
 /*Introduction Div Styling*/
 #introDiv{
-  margin-top: 30px;
 }
 
 
@@ -207,15 +265,28 @@ p {
 
 /*End Introduction Div Styling*/
 
-
+#doubleContent:after {
+  content: "";
+  display: table;
+  clear: both;
+}
 
 /*Interactive Graph Div*/
 #graphDiv{
   width: 49%;
-  margin: 0px;
-  margin-top: 10px;
-  left: 0px;
+  margin: auto;
   float: left;
+  padding: 0px 15px 15px 15px;
+}
+
+.graph1Container, .graph2Container {
+  background-color: #fff;
+  width: 100%;
+  height: 0;
+  padding-bottom: 70%;
+  border-radius: 10px;
+  border: 2px solid black;
+
 }
 
 
@@ -226,10 +297,10 @@ p {
 /*Statistics Div*/
 #statsDiv{
   width: 49%;
-  margin: 0px;
-  margin-top: 10px;
+  margin: auto;
   right: 0px;
   float: right;
+  padding: 0px 15px 15px 15px;
 
 }
 /*End Statistics Div*/
@@ -237,17 +308,25 @@ p {
 
 /*Interactive Activity Div*/
 #activityDiv {
-  width: 100%;
-  margin-top: 10px;
+  padding: 0px 15px 15px 15px;
 
 }
+
+.activityContainer {
+  width: 100%;
+  height: 0px;
+  padding-bottom: 56.25%;
+  background-color: #fff;
+  border-radius: 10px;
+  border: 2px solid black;
+
+}
+
 /*End Interactive Activity Div*/
 
 
 /*External Readings Div*/
 #extReadingsDiv{
-  width: 100%;
-  margin-top: 10px;
 }
 /*End External Readings Div*/
 

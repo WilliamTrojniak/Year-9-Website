@@ -42,5 +42,18 @@ function updatePageContent() {
   for(i = 0; i < pages[activePage].length; i++){
     pages[activePage][i].style.display = "block";
   }
+
+  var slideButtonBack = document.getElementsByClassName("slideprev");
+  var slideButtonForward = document.getElementsByClassName("slidenext")
+
+  slideButtonBack[0].style.display = "block";
+  slideButtonForward[0].style.display = "block";
+
+  if(slideIndex == 1){
+    slideButtonBack[0].style.display = "none";
+  }else if(slideIndex == 3){
+    slideButtonForward[0].style.display = "none";
+    
+  }
   
 }

@@ -1,4 +1,7 @@
 var slideIndex = 1;
+var colours = [["#F2C744","#F2E7C4"],["#81D991","#ABD981"],["#027333","#03A65A"]];
+var highContrast = false;
+
 showSlides(slideIndex);
 updatePageContent();
 
@@ -54,6 +57,25 @@ function updatePageContent() {
   }else if(slideIndex == 3){
     slideButtonForward[0].style.display = "none";
     
+  }
+
+  // Update page colours
+  var contentDivs = document.getElementsByClassName("contentDiv");
+  var flipBoxes = document.getElementsByClassName("flip-box");
+  var flipBoxFronts = document.getElementsByClassName("flip-box-front");
+  var flipBoxBacks = document.getElementsByClassName("flip-box-back");
+  if(!highContrast){
+    for(i = 0; i < contentDivs.length; i++){
+      contentDivs[i].style.borderColor = colours[slideIndex-1][0];
+      contentDivs[i].style.backgroundColor = colours[slideIndex-1][1];
+    }
+    for(i = 0; i < flipBoxes.length; i++){
+      flipBoxes[i].style.color = "#000";
+    }
+    for(i = 0; i < flipBoxFronts.length; i++){
+      flipBoxFronts[i].style.backgroundColor = colours[slideIndex-1][0];
+      flipBoxBacks[i].style.backgroundColor = colours[slideIndex-1][0];
+    }
   }
   
 }

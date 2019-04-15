@@ -7,13 +7,14 @@
     <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
-
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   </head>
-  <body>
+  <body onresize="updatePageContent()">
 
     <!-- Menu Bar Div-->
   	<ul class = "menubar">
       <li class = "menubarListItem"><a class = "menubarLink" href = "#index.html">Home</a></li>
+      <li class = "menubarListItem"><input type= "button" value = "High Contrast" onclick="changeHC()"></li>
     </ul>
     <!-- End Menu Bar Div -->
 
@@ -48,12 +49,7 @@
         <div class = "firstSlideElement textblock">
           <h1>Introduction</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            Affordable and clean energy is an incredibly impactful goal to reach for many reasons. Currently, energy production is the major contributor to global greenhouse gasses. Not only this, current sources are non-renewable and therefore unsustainable. By using renewable energy sources, we increase our population's sustainability. Finally, 13% of the worlds population lacks access to electricity whatsoever, a modern dependancy in today's world. This has lead to millions of deaths due to air pollution from burning fuels for heat in place of electric heating.
           </p>
         </div>
         <div class = "secondSlideElement textblock">
@@ -70,12 +66,7 @@
         <div class = "thirdSlideElement textblock">
           <h1>Introduction</h1>
           <p>
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do eiusmod
-            tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam,
-            quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-            consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse
-            cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non
-            proident, sunt in culpa qui officia deserunt mollit anim id est laborum. 
+            The world is in need serious need of action towards the climate. The effects of climate change are many and drastic. Sea levels rising, loss of habitats and unsuitable farming conditions, along with many others are all effects of climate change. Undoubtedly, this issue needs immediate attention, but where to start? Greenhouse gasses are a significant cause of climate change and are currently being emitted at a higher rate than ever before. However, by eliminating fossil fuelled energy sources and replacing them with clean, renewable energy sources, levels of greenhouse gas emissions have the potential to be reduced drastically, helping to slow and mitigate the effects of climate change. 
           </p>
         </div>
    		</div>
@@ -83,23 +74,40 @@
       <div class = "doubleDiv" style="background-color: transparent; border: 0px;" id = "doubleContent">
      		<!-- Interactive Graph Div -->
      		<div id = "graphDiv" class = "contentDiv">
-          <h1>Interactive Graph</h1>
+          <div class = "firstSlideElement secondSlideElement">
+            <h1 class = "year">Energy Produced by Source (In Quadrillion BTUs)</h1>
+            <h1 class = "overtime" style="display: none">Percentage of Energy Produced with Renewable Sources</h1>
+          </div>
+          <h1 class = "thirdSlideElement">Deaths Caused by Climate Changes</h1>
           <div class = "firstSlideElement">
-            <div class = "graph1Container">
+            <div class = "graph1Container" id = "graph1">
               <div class = "graph1MenuBar">
+                <select id = "graph1SelectGraph">
+                  <option value = "year" selected>Year</option>
+                  <option value = "overtime">Over Time</option>
+                </select>
+                <select id = "yearIn1">
+                  <option value = 1949 selected>1949</option>
+                </select>
               </div>
             </div>
           </div>
           <div class = "secondSlideElement">
-            <div class = "graph1Container">
+            <div class = "graph1Container" id = "graph2">
               <div class = "graph1MenuBar">
+                <select id = "graph2SelectGraph">
+                  <option value = "year" selected>Year</option>
+                  <option value = "overtime">Over Time</option>
+                </select>
+                <select id = "yearIn2">
+                  <option value = 1949 selected>1949</option>
+                </select>
               </div>
             </div>
           </div>
           <div class = "thirdSlideElement">
-            <div class = "graph2Container">
-              <div class = "graph2MenuBar">
-              </div>
+            <div class = "graph2Container" id = "graph4">
+              <div></div>
             </div>
           </div>
      		</div>
@@ -171,7 +179,7 @@
                     <h3>17.5%</h3>
                   </div>
                   <div class = "flip-box-back">
-                    <p>Of all energy produed in 2015, only 17.5% came from renewable sources</p>
+                    <p>Of all energy produced in 2015, only 17.5% came from renewable sources</p>
                   </div>
                 </div>
               </div>
@@ -179,10 +187,9 @@
             </div>
           </div>
           <div class = "secondSlideElement">
-            <h1>Interactive Graph</h1>
-            <div class = "graph2Container">
-              <div class = "graph2MenuBar">
-              </div>
+            <h1>Deaths Caused by Climate Changes</h1>
+            <div class = "graph2Container" id = "graph3">
+              <div></div>
             </div>
           </div>
           <div class = "thirdSlideElement">
@@ -274,9 +281,8 @@
 
 
    
-
-
-  	<script src = "scripts/slideshow.js"></script>
+    <script src = "scripts/slideshow.js"></script>
+    <script src = "scripts/graph.js"></script>
     <script src = "scripts/backToTopButton.js"></script>
   </body>
 </html>

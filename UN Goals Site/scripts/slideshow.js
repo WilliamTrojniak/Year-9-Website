@@ -1,9 +1,11 @@
 var slideIndex = 1;
 var colours = [["#F2C744","#F2E7C4"],["#81D991","#ABD981"],["#027333","#03A65A"]];
 var highContrast = false;
+var cntr = 0;
 
 showSlides(slideIndex);
 updatePageContent();
+
 
 function plusSlides(n) {
   var slides = document.getElementsByClassName("mySlides");
@@ -53,8 +55,17 @@ function updatePageContent() {
   slideButtonForward[0].style.display = "block";
 
   if(slideIndex == 1){
+
+    if(cntr != 0){
+      graph1();
+    }else{
+      cntr = 1;
+    }
     slideButtonBack[0].style.display = "none";
+  }else if(slideIndex == 2){
+    graph2();  
   }else if(slideIndex == 3){
+    graph4();
     slideButtonForward[0].style.display = "none";
     
   }
@@ -64,10 +75,12 @@ function updatePageContent() {
   var flipBoxes = document.getElementsByClassName("flip-box");
   var flipBoxFronts = document.getElementsByClassName("flip-box-front");
   var flipBoxBacks = document.getElementsByClassName("flip-box-back");
+  var graphContainers = [document.getElementsByClassName("graph1Container"), document.getElementsByClassName("graph2Container")];
   if(!highContrast){
     for(i = 0; i < contentDivs.length; i++){
       contentDivs[i].style.borderColor = colours[slideIndex-1][0];
       contentDivs[i].style.backgroundColor = colours[slideIndex-1][1];
+      contentDivs[i].style.color = "#000";
     }
     for(i = 0; i < flipBoxes.length; i++){
       flipBoxes[i].style.color = "#000";
@@ -76,6 +89,31 @@ function updatePageContent() {
       flipBoxFronts[i].style.backgroundColor = colours[slideIndex-1][0];
       flipBoxBacks[i].style.backgroundColor = colours[slideIndex-1][0];
     }
+  }else{
+    for(i = 0; i < contentDivs.length; i++){
+      contentDivs[i].style.borderColor = "#000";
+      contentDivs[i].style.backgroundColor = "#000";
+      contentDivs[i].style.color = "#fff";
+
+    }
+    for(i = 0; i < graphContainers.length; i++){
+      for(t = 0; t < graphContainers[i].length; t++){
+        graphContainers[i][t].style.color = "#000";
+      }
+    }
+
+    for(i = 0; i < flipBoxes.length; i++){
+      flipBoxes[i].style.color = "#fff";
+    }
+    for(i = 0; i < flipBoxFronts.length; i++){
+      flipBoxFronts[i].style.backgroundColor = "#000";
+      flipBoxBacks[i].style.backgroundColor = "#000";
+    }
   }
   
+}
+
+function changeHC(){
+  highContrast = !highContrast;
+  updatePageContent();
 }

@@ -24,6 +24,10 @@ h3 {
   vertical-align: middle;
 }
 
+pre {
+  margin: 0px;
+}
+
 .textblock{
   padding: 2px;
 }
@@ -129,6 +133,18 @@ h3 {
 	background-color: #F2F3F7;
 
 }
+
+.menubarListItem input {
+  background-color: transparent;
+  color: #656D78;
+  border: none;
+  padding: 20px 40px;
+  text-decoration: none;
+  margin: 4px 2px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
 /*End Menu Bar Styling*/
 
 /*Back to top button*/
@@ -292,8 +308,7 @@ h3 {
 .graph1Container, .graph2Container {
   background-color: #fff;
   width: 100%;
-  height: 0;
-  padding-bottom: 70%;
+  height: 550px;
   border-radius: 10px;
   border: 2px solid black;
 
@@ -303,6 +318,25 @@ h3 {
   background-color: gray;
   height: 50px;
   border-radius: 8px 8px 0px 0px;
+  margin-bottom: 5px;
+  padding: 10px;
+}
+
+.graph1MenuBar > *, .graph2MenuBar > * {
+  display: inline;
+}
+
+.graphVisElement {
+  margin:0px;
+  padding: 10px;
+  height: 45px;
+  margin-top: 4px;
+  border-radius: 0px 5px 5px 0px;
+}
+
+.graphVisElement p {
+  margin: 0px;
+
 }
 
 

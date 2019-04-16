@@ -31,6 +31,14 @@ pre {
 .textblock{
   padding: 2px;
 }
+#HC {
+  z-index: 9999;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
 
 /*Flip Box Styling*/
 .flip-box {

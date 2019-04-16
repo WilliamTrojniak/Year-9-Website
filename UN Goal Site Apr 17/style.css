@@ -32,6 +32,15 @@ pre {
   padding: 2px;
 }
 
+#HC {
+  z-index: 9999;
+  margin: 0;
+  padding: 10px;
+  position: fixed;
+  top: 0;
+  right: 0;
+}
+
 /*Flip Box Styling*/
 .flip-box {
   height: 175px;
@@ -100,7 +109,7 @@ pre {
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #ffffff;
+  background-color: transparent;
   position: sticky;
   top: 0;
   width: 100%;

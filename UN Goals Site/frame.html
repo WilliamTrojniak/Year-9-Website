@@ -12,7 +12,7 @@
   <body onresize="updatePageContent()">
 
     <!-- Menu Bar Div-->
-  	<ul class = "menubar">
+    <ul class = "menubar">
       <li class = "menubarListItem"><a class = "menubarLink" href = "#index.html">Home</a></li>
       <li class = "menubarListItem"><input type= "button" value = "High Contrast" onclick="changeHC()"></li>
     </ul>
@@ -23,29 +23,29 @@
 
     <!-- Body Div -->
     <div id = "bodyDiv">
-    	<!-- Slideshow Div -->
-   		<div id = "slideShow"> 
-   			<div class = "slideshow-container">
-				<div class="mySlides fade">
-				  <img src="images/goal7.png" class = "slideImg">
-				</div>
+      <!-- Slideshow Div -->
+      <div id = "slideShow"> 
+        <div class = "slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/goal7.png" class = "slideImg">
+        </div>
 
-				<div class="mySlides fade">
-				  <img src="images/cleanEnergy.jpg" class = "slideImg">
-				</div>
+        <div class="mySlides fade">
+          <img src="images/cleanEnergy.jpg" class = "slideImg">
+        </div>
 
-				<div class="mySlides fade">
-				  <img src="images/goal13.png" class = "slideImg">
-				</div>
+        <div class="mySlides fade">
+          <img src="images/goal13.png" class = "slideImg">
+        </div>
 
-				<a class="slideprev" onclick="plusSlides(-1)">&#10094;</a>
-				<a class="slidenext" onclick="plusSlides(1)">&#10095;</a>
+        <a class="slideprev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="slidenext" onclick="plusSlides(1)">&#10095;</a>
 
-			</div>
-   		</div>
-   		<!-- End Slideshow Div -->
-   		<!-- Introduction Div -->
-   		<div id = "introDiv" class = "contentDiv">
+      </div>
+      </div>
+      <!-- End Slideshow Div -->
+      <!-- Introduction Div -->
+      <div id = "introDiv" class = "contentDiv">
         <div class = "firstSlideElement textblock">
           <h1>Affordable and Clean Energy</h1>
           <p>
@@ -64,11 +64,11 @@
             But why does climate change need to be addressed? Climate change affects all aspects of life for everyone. Huge areas of ice are melting as a result of global temperatures increasing, leading to rising sea levels and loss of habitats. Places once suitable to farm are becoming infertile, droughts and heatwaves are becoming more frequent, precipitation patterns are changing, natural disasters are becoming more powerful, and more. All of these effects pose serious risk to the health and wellbeing of all habitants of Earth, and so it is extremely important that action be taken to mitigate these effects, so that their impacts are lessened.
           </p>
         </div>
-   		</div>
-   		<!-- End Intro Div -->
+      </div>
+      <!-- End Intro Div -->
       <div class = "doubleDiv" style="background-color: transparent; border: 0px;" id = "doubleContent">
-     		<!-- Interactive Graph Div -->
-     		<div id = "graphDiv" class = "contentDiv">
+        <!-- Interactive Graph Div -->
+        <div id = "graphDiv" class = "contentDiv">
           <div class = "firstSlideElement secondSlideElement">
             <h1 class = "year">Energy Produced by Source (In Quadrillion BTUs)</h1>
             <h1 class = "overtime" style="display: none">Percentage of Energy Produced with Renewable Sources in the US</h1>
@@ -105,10 +105,10 @@
               <div></div>
             </div>
           </div>
-     		</div>
-     		<!-- End Interactive Graph Div -->
-     		<!-- Statistics Div -->
-     		<div id = "statsDiv" class = "contentDiv">
+        </div>
+        <!-- End Interactive Graph Div -->
+        <!-- Statistics Div -->
+        <div id = "statsDiv" class = "contentDiv">
           <div class = "firstSlideElement">
             <h1>Statistics</h1>
             <div class = "flex-container">
@@ -248,50 +248,78 @@
               <!-- Flip Box Ends -->
             </div>
           </div>
-     		</div>
-     		<!-- End Statistics Div -->
+        </div>
+        <!-- End Statistics Div -->
       </div>
-   		<!-- Interactive Activity Div -->
-   		<div id = "activityDiv" class = "secondSlideElement contentDiv">
+      <!-- Interactive Activity Div -->
+      <!-- <div id = "activityDiv" class = "secondSlideElement contentDiv">
         <h1>Interactive Activity</h1>
         <div class = "activityContainer">
         </div>
-   		</div>
-   		<!-- End Interactive Activity Div -->
-   		<!-- External Readings Div -->
-   		<div id = "extReadingsDiv" class = "contentDiv">
+      </div> -->
+      <!-- End Interactive Activity Div -->
+      <!-- External Readings Div -->
+      <div id = "extReadingsDiv" class = "contentDiv">
         <h1>External Readings</h1>
-   			<div class = "firstSlideElement">
+        <div class = "firstSlideElement">
           <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html';">
             <table>
               <td class="btnImg"><img src="images/pg1l1.jpg"></td>
               <td class="btnTxt"><p> Learn more about the reasoning behind Goal 7: Affordable and clean energy and what the goal hopes to acheive by the year 2030 from the official United Nations Development Programme site.</p></td>
             </table>
           </button>
-          <button type="button" class="extReadBtn">
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.ewb.ca/en/hello2030/affordable-and-clean-energy/';">
+            <table>
+              <td class="btnImg"><img src="images/pg1l2.jpg"></td>
+              <td class="btnTxt"><p> Learn more about how Canada is working to reach this goal.</p></td>
+            </table>
           </button>
         </div>
         <div class = "secondSlideElement">
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.ucsusa.org/clean-energy/increase-renewable-energy';">
+            <table>
+              <td class="btnImg"><img src="images/pg2l1.jpg"></td>
+              <td class="btnTxt"><p>Learn more about clean energy sources and the impact that they can have not only on the environment, but also jobs and other aspects of life.</p></td>
+            </table>
+          </button>
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.wri.org/blog/2013/11/carbon-dioxide-emissions-fossil-fuels-and-cement-reach-highest-point-human-history';">
+            <table>
+              <td class="btnImg"><img src="images/pg2l2.jpg"></td>
+              <td class="btnTxt"><p>Learn more about the impact that using fossil fuels for power can have on the environment.</p></td>
+            </table>
+          </button>
         </div>
         <div class = "thirdSlideElement">
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html';">
+            <table>
+              <td class="btnImg"><img src="images/pg3l1.jpg"></td>
+              <td class="btnTxt"><p>Learn more about Goal: 13, the reasons behind it, and its implications from the official United Nations Development Programme</p></td>
+            </table>
+          </button>
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.wwf.org.uk/effectsofclimatechange';">
+            <table>
+              <td class="btnImg"><img src="images/pg3l2.jpg"></td>
+              <td class="btnTxt"><p>Learn more about the serious impacts of climate change in various habitats and regions.</p></td>
+            </table>
+          </button>
         </div>
-   		</div>
-   		<!-- End external readings Div -->
-   		
-   	</div>
-   	<!-- End Body Div -->
-   	<!-- Footer Div -->
-	<div id = "footerDiv">
+      </div>
+      <!-- End external readings Div -->
+      
+    </div>
+    <!-- End Body Div -->
+    <!-- Footer Div -->
+  <div id = "footerDiv">
     <div>
       <p>Site by William Trojniak</p>
     </div>
-	</div>
-	<!-- End Footer Div -->
+  </div>
+  <!-- End Footer Div -->
 
 
    
     <script src = "scripts/slideshow.js"></script>
-    <!-- <script src = "scripts/graph.js"></script> -->
+    <script src = "scripts/graph.js"></script>
     <script src = "scripts/backToTopButton.js"></script>
   </body>
 </html>

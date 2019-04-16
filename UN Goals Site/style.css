@@ -1,6 +1,6 @@
 body {
-	margin: 0;
-	padding: 0;
+  margin: 0;
+  padding: 0;
   background-color: #FEFEFE;
 }
 
@@ -95,42 +95,42 @@ pre {
 
 /*Menu Bar Styling*/
 .menubar {
-	z-index: 9999;
-	list-style-type: none;
-	margin: 0;
-	padding: 0;
-	overflow: hidden;
-	background-color: #ffffff;
+  z-index: 9999;
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background-color: #ffffff;
   position: sticky;
-	top: 0;
-	width: 100%;
-	box-shadow: 0px 0px 15px #656;
+  top: 0;
+  width: 100%;
+  box-shadow: 0px 0px 15px #656;
 }
 
 .menubarListItem{
 
-	float: right;
+  float: right;
 
 }
 
 .menubarListItem:nth-child(1) {
 
-	float: left;
+  float: left;
 
 }
 
 .menubarLink {
-	display: block;
-	color: #656D78;
-	text-align: center;
-	padding: 20px 40px;
-	text-decoration: none;
-	font-size: 18px;
+  display: block;
+  color: #656D78;
+  text-align: center;
+  padding: 20px 40px;
+  text-decoration: none;
+  font-size: 18px;
 }
 
 .menubarLink:hover {
 
-	background-color: #F2F3F7;
+  background-color: #F2F3F7;
 
 }
 
@@ -174,9 +174,9 @@ pre {
 
 
 #bodyDiv {
-	background-color: #FFF;
+  background-color: #FFF;
   /*padding: 10px;*/
-	margin: 0px 100px 0px 100px;
+  margin: 0px 100px 0px 100px;
   box-shadow: 0px -10px 20px black;
   padding-bottom: 150px;
 
@@ -225,12 +225,12 @@ pre {
 .slideshow-container{
 
   height: 480px;
-	margin: 0px;
+  margin: 0px;
   padding-top: 10px;
   margin-left: auto;
   margin-right: auto;
-	position: relative;
-	
+  position: relative;
+  
 }
 
 /* Next & previous buttons */
@@ -443,13 +443,3 @@ pre {
   padding: 20px;
 }
 /*End Footer Div*/
-
-
-
-
-
-
-
-
-
-

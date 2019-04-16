@@ -10,6 +10,7 @@ var headerOvertimes = document.getElementsByClassName("overtime");
 
 var regions = ["Global: ", "African Region: ", "Americas: ", "Eastern and Mediterranean Region: ", "European Regions: ", "South-East Asia Regions: ", "Western Pacific Region: ", "High Income Countries: "];
 
+var hasMadeOptions = false;
 
 
 function graph1(){
@@ -56,14 +57,18 @@ function generateGraph1(graphIndex){
 
 	$.getJSON(staticUrl1, function(data) {
 
-		for(i = 0; i < graph1YearIns.length; i++){
-			for(t = 1; t < data.length; t++){
-				var option = document.createElement("option");
-				graph1YearIns[i].appendChild(option);
-				option.setAttribute("value", data[t].year);
-				option.innerHTML = data[t].year;
+		if(!hasMadeOptions){
+				for(i = 0; i < graph1YearIns.length; i++){
+				for(t = 1; t < data.length; t++){
+					var option = document.createElement("option");
+					graph1YearIns[i].appendChild(option);
+					option.setAttribute("value", data[t].year);
+					option.innerHTML = data[t].year;
+				}
 			}
+			hasMadeOptions = true;
 		}
+		
 
 
 		if(graph1TypeSelects[graphIndex].value == "year"){
@@ -176,7 +181,6 @@ function generateGraph1(graphIndex){
 function generateGraph2(graphIndex){
 	var width = graphs[graphIndex].clientWidth;
 	$.getJSON(staticUrl2, function(data){
-		console.log(data);
 		var largest = 0;
 		for(i = 0; i < data.fact.length; i++){
 			if(data.fact[i].dims.GHO == "Climate change attributable deaths"){
@@ -198,11 +202,9 @@ function generateGraph2(graphIndex){
             	div.setAttribute("class","graphVisElement");
             	div.setAttribute("id","div"+i);
 
-            	// console.log(maxWidth);
-            	// console.log(largest);
-            	// console.log(data.fact[i].Value);
+
             	newWidth = (data.fact[i].Value / largest) * maxWidth;
-            	// console.log(newWidth);
+
 
             	document.getElementById("div"+i).style.width = newWidth + "px";
             	document.getElementById("div"+i).style.backgroundColor = "#BFD5AE";

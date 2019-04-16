@@ -71,7 +71,7 @@ function generateGraph1(graphIndex){
 				if(yearIn == data[i].year){
 					prodData = [data[i].data.production.biomass, data[i].data.production.coal, data[i].data.production["crude oil"], data[i].data.production["fossil fuels"], data[i].data.production.geothermal, data[i].data.production.hydroelectric, data[i].data.production["natural gas"], data[i].data.production.nuclear, data[i].data.production.solar, data[i].data.production.wind];
 					prodNames = ["Biomass: ", "Coal: ", "Crude Oil: ", "Fossil Fuels: ", "Geothermal: ", "Hydroelectric: ", "Natural Gas: ", "Nuclear: ", "Solar: ", "Wind: " ]
-					prodDataColours = ["darkgreen", "pink", "gray", "brown", "red", "cyan", "orange", "green", "blue", "lightblue"];
+					prodDataColours = ["#F2EBDC", "#F2E4C9", "#F2EBDC", "#F2E4C9", "#F2EBDC", "#F2E4C9", "#F2EBDC", "#F2E4C9", "#F2EBDC", "#F2E4C9"];
 
 
 					var largest = prodData[0];
@@ -177,18 +177,18 @@ function generateGraph2(graphIndex){
 	var width = graphs[graphIndex].clientWidth;
 	$.getJSON(staticUrl2, function(data){
 		console.log(data);
-		var largest = data.fact[0].Value;
+		var largest = 0;
 		for(i = 0; i < data.fact.length; i++){
 			if(data.fact[i].dims.GHO == "Climate change attributable deaths"){
 				if(largest < data.fact[i].Value){
-					largest = data.fact[i].Value;
+					largest = parseInt(data.fact[i].Value);
 				}
 
 			}
 		}
 
 		maxWidth = graphs[graphIndex].clientWidth * 0.95;
-		barHeight = (graphs[graphIndex].clientHeight - 60)/8;
+		barHeight = (graphs[graphIndex].clientHeight - 80)/8;
 
 		ctr = 0;
 		for(i = 0; i < data.fact.length; i++){
@@ -198,10 +198,14 @@ function generateGraph2(graphIndex){
             	div.setAttribute("class","graphVisElement");
             	div.setAttribute("id","div"+i);
 
+            	// console.log(maxWidth);
+            	// console.log(largest);
+            	// console.log(data.fact[i].Value);
             	newWidth = (data.fact[i].Value / largest) * maxWidth;
+            	// console.log(newWidth);
 
             	document.getElementById("div"+i).style.width = newWidth + "px";
-            	document.getElementById("div"+i).style.backgroundColor = "red";
+            	document.getElementById("div"+i).style.backgroundColor = "#BFD5AE";
             	document.getElementById("div"+i).style.height = barHeight+ "px";
 
             	var p = document.createElement("p");        

@@ -76,6 +76,7 @@ function updatePageContent() {
   var flipBoxFronts = document.getElementsByClassName("flip-box-front");
   var flipBoxBacks = document.getElementsByClassName("flip-box-back");
   var graphContainers = [document.getElementsByClassName("graph1Container"), document.getElementsByClassName("graph2Container")];
+  var extReadBtns = document.getElementsByClassName("extReadBtn");
   if(!highContrast){
     for(i = 0; i < contentDivs.length; i++){
       contentDivs[i].style.borderColor = colours[slideIndex-1][0];
@@ -88,6 +89,11 @@ function updatePageContent() {
     for(i = 0; i < flipBoxFronts.length; i++){
       flipBoxFronts[i].style.backgroundColor = colours[slideIndex-1][0];
       flipBoxBacks[i].style.backgroundColor = colours[slideIndex-1][0];
+    }
+    for(i = 0; i < extReadBtns.length; i++){
+      extReadBtns[i].style.color = "#000";
+      extReadBtns[i].style.borderColor = colours[slideIndex-1][0];
+      extReadBtns[i].style.backgroundColor = colours[slideIndex-1][0];
     }
   }else{
     for(i = 0; i < contentDivs.length; i++){
@@ -106,8 +112,13 @@ function updatePageContent() {
       flipBoxes[i].style.color = "#fff";
     }
     for(i = 0; i < flipBoxFronts.length; i++){
-      flipBoxFronts[i].style.backgroundColor = "#000";
-      flipBoxBacks[i].style.backgroundColor = "#000";
+      flipBoxFronts[i].style.backgroundColor = "#222";
+      flipBoxBacks[i].style.backgroundColor = "#222";
+    }
+    for(i = 0; i < extReadBtns.length; i++){
+      extReadBtns[i].style.color = "#fff";
+      extReadBtns[i].style.borderColor = "#222";
+      extReadBtns[i].style.backgroundColor = "#222";
     }
   }
   

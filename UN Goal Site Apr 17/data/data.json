@@ -1,0 +1,534 @@
+{
+  "dimension": [
+                 {
+                   "label": "GHO",
+                   "display": "Indicator"
+                 },
+                 {
+                   "label": "PUBLISHSTATE",
+                   "display": "PUBLISH STATES"
+                 },
+                 {
+                   "label": "YEAR",
+                   "display": "Year"
+                 },
+                 {
+                   "label": "REGION",
+                   "display": "WHO region"
+                 }
+               ],
+    "fact": [
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "757"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "19"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "5404"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "4717"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "84"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "141"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "120"
+              },
+              {
+                "dims": {
+                          "REGION": "Global",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "1456"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "39"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "2029"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "1745"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "278"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "57"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "47"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the African Region",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "8"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "50"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "1"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "80"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "28"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "15"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.69"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Americas",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.32"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "979"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "26"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "745"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "634"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "149"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "20"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "17"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Eastern Mediterranean Region",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "4"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "72"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "25"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "20"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "6"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.67"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.56"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the European Region",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.15"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "1190"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "29"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "2320"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "2181"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "139"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "58"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "53"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the South-East Asia Region",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "3"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "93"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "3"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "190"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "105"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "12"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "4"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "3"
+              },
+              {
+                "dims": {
+                          "REGION": "Low-and-middle-income countries of the Western Pacific Region",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.27"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change  attributable DALYs per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "6"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change  attributable deaths per 100'000 children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.13"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change attributable DALYs ('000)",
+                          "YEAR": "2004"
+                        },
+                "Value": "16"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change attributable DALYs ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "4"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change attributable DALYs per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "2"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change attributable deaths",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.23"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change attributable deaths ('000) in children under 5 years",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.08"
+              },
+              {
+                "dims": {
+                          "REGION": "High income countries",
+                          "GHO": "Climate change attributable deaths per 100'000 capita",
+                          "YEAR": "2004"
+                        },
+                "Value": "0.02"
+              }
+      ]
+}

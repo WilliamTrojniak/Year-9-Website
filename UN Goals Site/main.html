@@ -1,0 +1,325 @@
+<!DOCTYPE HTML>
+<html lang = "en">
+  <head>
+    <title>UN Goals: 7 & 13</title>
+    <meta charset = "UTF-8" />
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link href="https://fonts.googleapis.com/css?family=Nunito" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Bubblegum+Sans" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Exo+2" rel="stylesheet">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+  </head>
+  <body onresize="updatePageContent()">
+
+    <!-- Menu Bar Div-->
+    <ul class = "menubar">
+      <li class = "menubarListItem"><a class = "menubarLink" href = "#index.html">Home</a></li>
+      <li class = "menubarListItem"><input type= "button" value = "High Contrast" onclick="changeHC()"></li>
+    </ul>
+    <!-- End Menu Bar Div -->
+
+    <!-- Back to top button -->
+    <button onclick="backToTop()" id="backToTopBttn" title="Back to Top">Top</button>
+
+    <!-- Body Div -->
+    <div id = "bodyDiv">
+      <!-- Slideshow Div -->
+      <div id = "slideShow"> 
+        <div class = "slideshow-container">
+        <div class="mySlides fade">
+          <img src="images/goal7.png" class = "slideImg">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/cleanEnergy.jpg" class = "slideImg">
+        </div>
+
+        <div class="mySlides fade">
+          <img src="images/goal13.png" class = "slideImg">
+        </div>
+
+        <a class="slideprev" onclick="plusSlides(-1)">&#10094;</a>
+        <a class="slidenext" onclick="plusSlides(1)">&#10095;</a>
+
+      </div>
+      </div>
+      <!-- End Slideshow Div -->
+      <!-- Introduction Div -->
+      <div id = "introDiv" class = "contentDiv">
+        <div class = "firstSlideElement textblock">
+          <h1>Affordable and Clean Energy</h1>
+          <p>
+            Affordable and clean energy is an incredibly impactful goal to reach for many reasons. Currently, energy production is the major contributor to global greenhouse gasses. Not only this, current sources are non-renewable and therefore unsustainable. By using renewable energy sources, we increase our population's sustainability. Finally, 13% of the worlds population lacks access to electricity whatsoever, a modern dependancy in today's world. This has lead to millions of deaths due to air pollution from burning fuels for heat in place of electric heating.
+          </p>
+        </div>
+        <div class = "secondSlideElement textblock">
+          <h1>How does changing our sources of energy help the environment?</h1>
+          <p>
+            Energy production is a significant contributor to greenhouse gas emissions. In fact, about 60% of all greenhouse gas emissions per year are generated when producing energy. These gases are extremely harmful to the environment and are a main factor behind climate change. What's worse, these harmful gases are being emitted at a higher rate than ever before. However, by eliminating energy sources such as fossil fuels, that release plenty of greenhouse gases, and replacing them with clean, renewable energy sources, such as windmills which harness the wind to produce energy without creating any harmful biproducts, levels of greenhouse gas emissions have the potential to be reduced drastically. By doing this, we can help to slow and mitigate the effects of climate change. 
+          </p>
+        </div>
+        <div class = "thirdSlideElement textblock">
+          <h1>Climate Action</h1>
+          <p>
+            But why does climate change need to be addressed? Climate change affects all aspects of life for everyone. Huge areas of ice are melting as a result of global temperatures increasing, leading to rising sea levels and loss of habitats. Places once suitable to farm are becoming infertile, droughts and heatwaves are becoming more frequent, precipitation patterns are changing, natural disasters are becoming more powerful, and more. All of these effects pose serious risk to the health and wellbeing of all habitants of Earth, and so it is extremely important that action be taken to mitigate these effects, so that their impacts are lessened.
+          </p>
+        </div>
+      </div>
+      <!-- End Intro Div -->
+      <div class = "doubleDiv" style="background-color: transparent; border: 0px;" id = "doubleContent">
+        <!-- Interactive Graph Div -->
+        <div id = "graphDiv" class = "contentDiv">
+          <div class = "firstSlideElement secondSlideElement">
+            <h1 class = "year">Energy Produced by Source (In Quadrillion BTUs)</h1>
+            <h1 class = "overtime" style="display: none">Percentage of Energy Produced with Renewable Sources in the US</h1>
+          </div>
+          <h1 class = "thirdSlideElement">Deaths Caused by Climate Change in 2004</h1>
+          <div class = "firstSlideElement">
+            <div class = "graph1Container" id = "graph1">
+              <div class = "graph1MenuBar">
+                <select id = "graph1SelectGraph">
+                  <option value = "year" selected>Year</option>
+                  <option value = "overtime">Over Time</option>
+                </select>
+                <select id = "yearIn1">
+                  <option value = 1949 selected>1949</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class = "secondSlideElement">
+            <div class = "graph1Container" id = "graph2">
+              <div class = "graph1MenuBar">
+                <select id = "graph2SelectGraph">
+                  <option value = "year" selected>Year</option>
+                  <option value = "overtime">Over Time</option>
+                </select>
+                <select id = "yearIn2">
+                  <option value = 1949 selected>1949</option>
+                </select>
+              </div>
+            </div>
+          </div>
+          <div class = "thirdSlideElement">
+            <div class = "graph2Container" id = "graph4">
+              <div></div>
+            </div>
+          </div>
+        </div>
+        <!-- End Interactive Graph Div -->
+        <!-- Statistics Div -->
+        <div id = "statsDiv" class = "contentDiv">
+          <div class = "firstSlideElement">
+            <h1>Statistics</h1>
+            <div class = "flex-container">
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>1 Billion</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Nearly 1 billion people do not have access to electricity</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>13%</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>13% of the world's population does not have access to modern electricity</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>3 Billion</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Around 3 billion people rely on fossil fuels for electricity</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>60%</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Energy production is responsible for approximately 60% of worldwide greenhouse gas emissions</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>4.3 Million</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>4.3 million people died from indoor air pollution produced from burning combustible fuels</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>17.5%</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Of all energy produced in 2015, only 17.5% came from renewable sources</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box Ends -->
+            </div>
+          </div>
+          <div class = "secondSlideElement">
+            <h1>Deaths Caused by Climate Change in 2004</h1>
+            <div class = "graph2Container" id = "graph3">
+              <div></div>
+            </div>
+          </div>
+          <div class = "thirdSlideElement">
+            <h1>Statistics</h1>
+            <div class = "flex-container">
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>0.85</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>There was an 0.85 degree celsius increase of global temperatures from 1880 to 2012</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>19cm</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Sea levels have risen by an average of 19cm from 1901 to 2010 as a result of ice melting</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>1.5</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Global temperatures are estimated to rise by 1.5 degrees celsius by the beginning of the 22nd Century</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>50%</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Global carbon dioxide emissions have increased by nearly 50% since 1990</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box -->
+              <div class = "flip-box">
+                <div class = "flip-box-inner">
+                  <div class = "flip-box-front">
+                    <h3>1.07 million</h3>
+                  </div>
+                  <div class = "flip-box-back">
+                    <p>Arctic sea ice area has declined by 1.07 million square kilometers since 1979</p>
+                  </div>
+                </div>
+              </div>
+              <!-- Flip Box Ends -->
+            </div>
+          </div>
+        </div>
+        <!-- End Statistics Div -->
+      </div>
+      <!-- Interactive Activity Div -->
+      <!-- <div id = "activityDiv" class = "secondSlideElement contentDiv">
+        <h1>Interactive Activity</h1>
+        <div class = "activityContainer">
+        </div>
+      </div> -->
+      <!-- End Interactive Activity Div -->
+      <!-- External Readings Div -->
+      <div id = "extReadingsDiv" class = "contentDiv">
+        <h1>External Readings</h1>
+        <div class = "firstSlideElement">
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-7-affordable-and-clean-energy.html';">
+            <table>
+              <td class="btnImg"><img src="images/pg1l1.jpg"></td>
+              <td class="btnTxt"><p> Learn more about the reasoning behind Goal 7: Affordable and clean energy and what the goal hopes to acheive by the year 2030 from the official United Nations Development Programme site.</p></td>
+            </table>
+          </button>
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.ewb.ca/en/hello2030/affordable-and-clean-energy/';">
+            <table>
+              <td class="btnImg"><img src="images/pg1l2.jpg"></td>
+              <td class="btnTxt"><p> Learn more about how Canada is working to reach this goal.</p></td>
+            </table>
+          </button>
+        </div>
+        <div class = "secondSlideElement">
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.ucsusa.org/clean-energy/increase-renewable-energy';">
+            <table>
+              <td class="btnImg"><img src="images/pg2l1.jpg"></td>
+              <td class="btnTxt"><p>Learn more about clean energy sources and the impact that they can have not only on the environment, but also jobs and other aspects of life.</p></td>
+            </table>
+          </button>
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.wri.org/blog/2013/11/carbon-dioxide-emissions-fossil-fuels-and-cement-reach-highest-point-human-history';">
+            <table>
+              <td class="btnImg"><img src="images/pg2l2.jpg"></td>
+              <td class="btnTxt"><p>Learn more about the impact that using fossil fuels for power can have on the environment.</p></td>
+            </table>
+          </button>
+        </div>
+        <div class = "thirdSlideElement">
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.undp.org/content/undp/en/home/sustainable-development-goals/goal-13-climate-action.html';">
+            <table>
+              <td class="btnImg"><img src="images/pg3l1.jpg"></td>
+              <td class="btnTxt"><p>Learn more about Goal: 13, the reasons behind it, and its implications from the official United Nations Development Programme</p></td>
+            </table>
+          </button>
+          <button type="button" class="extReadBtn" onclick="window.location.href = 'https://www.wwf.org.uk/effectsofclimatechange';">
+            <table>
+              <td class="btnImg"><img src="images/pg3l2.jpg"></td>
+              <td class="btnTxt"><p>Learn more about the serious impacts of climate change in various habitats and regions.</p></td>
+            </table>
+          </button>
+        </div>
+      </div>
+      <!-- End external readings Div -->
+      
+    </div>
+    <!-- End Body Div -->
+    <!-- Footer Div -->
+  <div id = "footerDiv">
+    <div>
+      <p>Site by William Trojniak</p>
+    </div>
+  </div>
+  <!-- End Footer Div -->
+
+
+   
+    <script src = "scripts/slideshow.js"></script>
+    <script src = "scripts/graph.js"></script>
+    <script src = "scripts/backToTopButton.js"></script>
+  </body>
+</html>
